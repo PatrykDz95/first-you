@@ -1,0 +1,38 @@
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: clamp(28px, 6vh, 64px) 24px 72px;
+}
+h1 {
+  font: 600 clamp(28px, 5vw, 38px) / 1.15 var(--serif);
+  margin: 0 0 8px;
+}
+h2 {
+  font: 600 20px/1.3 var(--serif);
+  margin: 32px 0 8px;
+}
+p,
+li {
+  max-width: 40em;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  margin: 4px 0;
+}
+a {
+  color: var(--pine);
+}
+.lang {
+  margin: 0 0 20px;
+}
+.lang button {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--graphite);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}

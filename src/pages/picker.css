@@ -1,0 +1,51 @@
+.skills {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  border-top: 1px solid var(--mist);
+}
+.skill {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 4px 14px;
+  width: 100%;
+  text-align: left;
+  padding: 16px 4px 16px 2px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--mist);
+  cursor: pointer;
+}
+.mark {
+  grid-row: span 3;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  border: 1.5px solid var(--graphite);
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  transition: background 120ms, border-color 120ms;
+}
+.mark svg {
+  width: 13px;
+  height: 13px;
+  opacity: 0;
+}
+.skill[aria-pressed='true'] .mark {
+  background: var(--pine);
+  border-color: var(--pine);
+}
+.skill[aria-pressed='true'] .mark svg {
+  opacity: 1;
+}
+.skill-title {
+  font-weight: 600;
+}
+.skill-desc {
+  color: var(--graphite);
+}
+.skill-example {
+  color: var(--graphite);
+  font: italic 15px/1.5 var(--serif);
+}

@@ -1,0 +1,23 @@
+name: The window showed up where it shouldn't
+description: '"Didn''t fit" — a prompt got the window but it was the wrong category or moment.'
+labels: [classifier, misfire]
+body:
+  - type: markdown
+    attributes:
+      value: Issues are public. Paraphrase your prompt or replace private details, keeping the first words as they were (the rules mostly look at how a prompt starts).
+  - type: textarea
+    id: prompt
+    attributes: { label: Prompt (paraphrased), placeholder: 'Write a function that sends an email via SMTP' }
+    validations: { required: true }
+  - type: dropdown
+    id: site
+    attributes: { label: Site, options: [ChatGPT, Claude, Gemini] }
+  - type: input
+    id: shown
+    attributes: { label: Which micro-task did the window show?, placeholder: 'Write a quick draft…' }
+  - type: checkboxes
+    id: ongoing
+    attributes:
+      label: Context
+      options:
+        - label: It was in the middle of an existing conversation

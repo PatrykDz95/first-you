@@ -1,0 +1,298 @@
+[
+  {
+    "text": "Write an email to my landlord asking to fix the heating.",
+    "expected": "email"
+  },
+  {
+    "text": "Draft a polite reply to the recruiter declining the offer.",
+    "expected": "email"
+  },
+  {
+    "text": "Can you write a short message to the team about Friday's release?",
+    "expected": "email"
+  },
+  {
+    "text": "Reply to this email saying I'll join the call at 3pm.",
+    "expected": "email"
+  },
+  {
+    "text": "Please write a thank you email to my interviewer.",
+    "expected": "email"
+  },
+  {
+    "text": "Compose a follow-up email to the client about the overdue invoice.",
+    "expected": "email"
+  },
+  {
+    "text": "Hi, can you draft an email to HR about my vacation days?",
+    "expected": "email"
+  },
+  {
+    "text": "Write me a quick Slack message to my manager saying I'm sick today.",
+    "expected": "email"
+  },
+  {
+    "text": "What is 15% of 80?",
+    "expected": "math"
+  },
+  {
+    "text": "Calculate 1200 * 1.23",
+    "expected": "math"
+  },
+  {
+    "text": "How much is 45 times 12?",
+    "expected": "math"
+  },
+  {
+    "text": "What's 17 x 23?",
+    "expected": "math"
+  },
+  {
+    "text": "Calculate the monthly payment if I pay 24000 over 36 months",
+    "expected": "math"
+  },
+  {
+    "text": "12.5 + 7.25 + 3",
+    "expected": "math"
+  },
+  {
+    "text": "how much is 250 eur split into 3 installments",
+    "expected": "math"
+  },
+  {
+    "text": "What is photosynthesis?",
+    "expected": "fact"
+  },
+  {
+    "text": "Who was Nikola Tesla?",
+    "expected": "fact"
+  },
+  {
+    "text": "Who invented the telephone?",
+    "expected": "fact"
+  },
+  {
+    "text": "What is a monad in functional programming?",
+    "expected": "fact"
+  },
+  {
+    "text": "Who wrote Pride and Prejudice?",
+    "expected": "fact"
+  },
+  {
+    "text": "What is the capital of Australia?",
+    "expected": "fact"
+  },
+  {
+    "text": "Who discovered penicillin?",
+    "expected": "fact"
+  },
+  {
+    "text": "What are black holes?",
+    "expected": "fact"
+  },
+  {
+    "text": "Summarize this article:\nThe city council approved a new five-year transport plan yesterday. It includes two new tram lines, forty additional kilometres of bike lanes and a gradual reduction of car traffic in the historic centre. Some residents worry about higher parking fees and disruption during construction. Officials argue that the investments will shorten commutes and improve air quality. The first works are expected to start next spring, and public consultations will run until the end of the month.",
+    "expected": "summary"
+  },
+  {
+    "text": "Sleep is one of the most important restorative processes in the body. During sleep the brain organises information gathered during the day, strengthens memory traces and clears metabolic waste. Adults usually need seven to nine hours of sleep, yet many people sleep much less. Chronic sleep deprivation is linked to poorer concentration, higher risk of heart disease and weaker immunity. Experts recommend consistent bedtimes, fewer screens in the evening and a cool bedroom.\n\nTL;DR please",
+    "expected": "summary"
+  },
+  {
+    "text": "Summarize in two sentences: Sleep is one of the most important restorative processes in the body. During sleep the brain organises information gathered during the day, strengthens memory traces and clears metabolic waste. Adults usually need seven to nine hours of sleep, yet many people sleep much less. Chronic sleep deprivation is linked to poorer concentration, higher risk of heart disease and weaker immunity. Experts recommend consistent bedtimes, fewer screens in the evening and a cool bedroom.",
+    "expected": "summary"
+  },
+  {
+    "text": "Should I learn Go or Rust next?",
+    "expected": "decision"
+  },
+  {
+    "text": "Should I take the job offer with higher pay but a longer commute?",
+    "expected": "decision"
+  },
+  {
+    "text": "Which one should I choose: MacBook Air or ThinkPad X1?",
+    "expected": "decision"
+  },
+  {
+    "text": "Should I refinance my mortgage now?",
+    "expected": "decision"
+  },
+  {
+    "text": "Why is my email not being delivered?",
+    "expected": null
+  },
+  {
+    "text": "Write a Python function that sends an email via SMTP.",
+    "expected": null
+  },
+  {
+    "text": "What is wrong with my code?",
+    "expected": null
+  },
+  {
+    "text": "What is the best way to learn Spanish?",
+    "expected": null
+  },
+  {
+    "text": "Explain the difference between TCP and UDP.",
+    "expected": null
+  },
+  {
+    "text": "Write a commit message for these changes.",
+    "expected": null
+  },
+  {
+    "text": "What's the weather in London?",
+    "expected": null
+  },
+  {
+    "text": "Summarize our conversation so far.",
+    "expected": null
+  },
+  {
+    "text": "Write a blog post about remote work.",
+    "expected": null
+  },
+  {
+    "text": "Help me plan a 5-day trip to Japan.",
+    "expected": null
+  },
+  {
+    "text": "Translate to Spanish: thank you for the meeting.",
+    "expected": null
+  },
+  {
+    "text": "What is this?",
+    "expected": null
+  },
+  {
+    "text": "Generate 10 names for a coffee shop.",
+    "expected": null
+  },
+  {
+    "text": "Fix this SQL: SELECT * FROM users WHERE id = 1;",
+    "expected": null
+  },
+  {
+    "text": "How do I configure Kafka retries in Spring Boot?",
+    "expected": null
+  },
+  {
+    "text": "Review my CV and suggest improvements.",
+    "expected": null
+  },
+  {
+    "text": "I got an email from my bank, is it phishing?",
+    "expected": null
+  },
+  {
+    "text": "Write a cover letter for a Java developer role.",
+    "expected": null
+  },
+  {
+    "text": "Who is the best goalkeeper of all time?",
+    "expected": null
+  },
+  {
+    "text": "What should I cook tonight?",
+    "expected": null
+  },
+  {
+    "text": "Calculate the derivative of x squared.",
+    "expected": null
+  },
+  {
+    "text": "How much does a Tesla Model 3 cost?",
+    "expected": null
+  },
+  {
+    "text": "Is it a good idea to email my professor at night?",
+    "expected": null
+  },
+  {
+    "text": "Write unit tests for the EmailService class.",
+    "expected": null
+  },
+  {
+    "text": "Can you check this code?\n```ts\nconst x = 1\n```",
+    "expected": null
+  },
+  {
+    "text": "Tell me a joke about programmers.",
+    "expected": null
+  },
+  {
+    "text": "What is your name?",
+    "expected": null
+  },
+  {
+    "text": "Make a shopping list for a BBQ for 8 people.",
+    "expected": null
+  },
+  {
+    "text": "Why do cats purr?",
+    "expected": null
+  },
+  {
+    "text": "Rewrite this paragraph to sound more formal: we are gonna ship it next week.",
+    "expected": null
+  },
+  {
+    "text": "Why am I getting this?\nModuleNotFoundError: No module named 'requests'",
+    "expected": "debug"
+  },
+  {
+    "text": "Uncaught ReferenceError: process is not defined — what am I doing wrong?",
+    "expected": "debug"
+  },
+  {
+    "text": "error[E0382]: borrow of moved value: `v`\n --> src/main.rs:5:20",
+    "expected": "debug"
+  },
+  {
+    "text": "Explain the difference between Error and Exception in Java.",
+    "expected": null
+  },
+  {
+    "text": "How do I handle exceptions in Spring Boot controllers?",
+    "expected": null
+  },
+  {
+    "text": "What does idempotent mean?",
+    "expected": "fact"
+  },
+  {
+    "text": "Define photosynthesis.",
+    "expected": "fact"
+  },
+  {
+    "text": "Is it worth learning Rust this year?",
+    "expected": "decision"
+  },
+  {
+    "text": "Which is better for a beginner: Python or Go?",
+    "expected": "decision"
+  },
+  {
+    "text": "What to choose for a backend: Kotlin or Go?",
+    "expected": "decision"
+  },
+  {
+    "text": "Multiply 17 by 23",
+    "expected": "math"
+  },
+  {
+    "text": "What does this mean?",
+    "expected": null
+  },
+  {
+    "text": "Define a function that returns the sum of two numbers.",
+    "expected": null
+  },
+  {
+    "text": "Define the variables before the loop in this script.",
+    "expected": null
+  }
+]

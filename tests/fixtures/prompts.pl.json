@@ -1,0 +1,282 @@
+[
+  {
+    "text": "Napisz maila do szefa, że jutro biorę dzień wolnego.",
+    "expected": "email"
+  },
+  {
+    "text": "Napisz krótką wiadomość do sąsiada z prośbą o ściszenie muzyki po 22.",
+    "expected": "email"
+  },
+  {
+    "text": "Proszę, napisz uprzejmego maila do klienta z przypomnieniem o fakturze.",
+    "expected": "email"
+  },
+  {
+    "text": "Odpisz Kasi, że w piątek nie dam rady, ale w sobotę chętnie.",
+    "expected": "email"
+  },
+  {
+    "text": "Przygotuj odpowiedź do rekrutera, że jestem zainteresowany ofertą.",
+    "expected": "email"
+  },
+  {
+    "text": "Zredaguj e-mail do wykładowcy z prośbą o przesunięcie terminu.",
+    "expected": "email"
+  },
+  {
+    "text": "Czy możesz napisać krótkiego maila do HR z pytaniem o urlop?",
+    "expected": "email"
+  },
+  {
+    "text": "Hej, napisz mi szybkiego smsa do mamy, że będę później.",
+    "expected": "email"
+  },
+  {
+    "text": "Ile to jest 17 razy 23?",
+    "expected": "math"
+  },
+  {
+    "text": "Policz 15% z 340 zł.",
+    "expected": "math"
+  },
+  {
+    "text": "1250 * 0,23",
+    "expected": "math"
+  },
+  {
+    "text": "Oblicz, ile zapłacę za 3 bilety po 49 zł.",
+    "expected": "math"
+  },
+  {
+    "text": "Ile wynosi 23% VAT od 1200 zł?",
+    "expected": "math"
+  },
+  {
+    "text": "Ile to 365 podzielić przez 7?",
+    "expected": "math"
+  },
+  {
+    "text": "Policz ile to 48 razy 12",
+    "expected": "math"
+  },
+  {
+    "text": "Co to jest fotosynteza?",
+    "expected": "fact"
+  },
+  {
+    "text": "Kim był Mikołaj Kopernik?",
+    "expected": "fact"
+  },
+  {
+    "text": "Czym jest inflacja bazowa?",
+    "expected": "fact"
+  },
+  {
+    "text": "Kto wynalazł żarówkę?",
+    "expected": "fact"
+  },
+  {
+    "text": "Co to znaczy idempotentny?",
+    "expected": "fact"
+  },
+  {
+    "text": "Kim była Maria Skłodowska-Curie?",
+    "expected": "fact"
+  },
+  {
+    "text": "Kto napisał Lalkę?",
+    "expected": "fact"
+  },
+  {
+    "text": "Streść ten tekst:\nRada miasta przyjęła wczoraj nowy plan transportowy na najbliższe pięć lat. Zakłada on budowę dwóch nowych linii tramwajowych, wydłużenie ścieżek rowerowych o czterdzieści kilometrów oraz stopniowe ograniczanie ruchu samochodów w ścisłym centrum. Część mieszkańców obawia się wyższych opłat za parkowanie i utrudnień podczas budowy. Urzędnicy przekonują jednak, że inwestycje skrócą czas dojazdu i poprawią jakość powietrza. Pierwsze prace mają ruszyć wiosną przyszłego roku, a konsultacje społeczne potrwają do końca miesiąca.",
+    "expected": "summary"
+  },
+  {
+    "text": "Podsumuj w dwóch zdaniach:\nSen jest jednym z najważniejszych procesów regenerujących organizm. Podczas snu mózg porządkuje informacje zebrane w ciągu dnia, wzmacnia ślady pamięciowe i usuwa produkty przemiany materii. Dorośli potrzebują zwykle od siedmiu do dziewięciu godzin snu, ale wiele osób śpi znacznie krócej. Przewlekły niedobór snu wiąże się z gorszą koncentracją, większym ryzykiem chorób serca i obniżoną odpornością. Specjaliści zalecają stałe pory zasypiania, ograniczenie ekranów wieczorem i chłodną sypialnię.",
+    "expected": "summary"
+  },
+  {
+    "text": "Rada miasta przyjęła wczoraj nowy plan transportowy na najbliższe pięć lat. Zakłada on budowę dwóch nowych linii tramwajowych, wydłużenie ścieżek rowerowych o czterdzieści kilometrów oraz stopniowe ograniczanie ruchu samochodów w ścisłym centrum. Część mieszkańców obawia się wyższych opłat za parkowanie i utrudnień podczas budowy. Urzędnicy przekonują jednak, że inwestycje skrócą czas dojazdu i poprawią jakość powietrza. Pierwsze prace mają ruszyć wiosną przyszłego roku, a konsultacje społeczne potrwają do końca miesiąca.\n\nStreść to w jednym zdaniu.",
+    "expected": "summary"
+  },
+  {
+    "text": "Co wybrać: iPhone czy Pixel do 3 tysięcy?",
+    "expected": "decision"
+  },
+  {
+    "text": "Czy powinienem zmienić pracę na lepiej płatną, ale z dłuższym dojazdem?",
+    "expected": "decision"
+  },
+  {
+    "text": "Czy powinnam kupić mieszkanie teraz czy poczekać rok?",
+    "expected": "decision"
+  },
+  {
+    "text": "Czy warto uczyć się Rusta jako drugiego języka?",
+    "expected": "decision"
+  },
+  {
+    "text": "Co lepiej wybrać na wakacje: Chorwację czy Grecję?",
+    "expected": "decision"
+  },
+  {
+    "text": "Mój mail nie dochodzi do skrzynki odbiorczej, co może być przyczyną?",
+    "expected": null
+  },
+  {
+    "text": "Ile to kosztuje w Polsce?",
+    "expected": null
+  },
+  {
+    "text": "Co to za błąd: TypeError undefined is not a function",
+    "expected": null
+  },
+  {
+    "text": "Napisz funkcję w Pythonie, która wysyła maila przez SMTP.",
+    "expected": null
+  },
+  {
+    "text": "Wyjaśnij różnicę między TCP a UDP.",
+    "expected": null
+  },
+  {
+    "text": "Zaplanuj mi trening na 4 tygodnie przed półmaratonem.",
+    "expected": null
+  },
+  {
+    "text": "Jak ugotować rosół?",
+    "expected": null
+  },
+  {
+    "text": "Przetłumacz na angielski: dziękuję za spotkanie.",
+    "expected": null
+  },
+  {
+    "text": "Co to jest to?",
+    "expected": null
+  },
+  {
+    "text": "Napisz wiersz o jesieni.",
+    "expected": null
+  },
+  {
+    "text": "Pomóż mi zaplanować podróż do Japonii na 10 dni.",
+    "expected": null
+  },
+  {
+    "text": "Czy możesz sprawdzić ten kod?\n```js\nconst a = 1;\n```",
+    "expected": null
+  },
+  {
+    "text": "Podsumuj naszą rozmowę.",
+    "expected": null
+  },
+  {
+    "text": "Streść książkę Pan Tadeusz.",
+    "expected": null
+  },
+  {
+    "text": "Ile jest województw w Polsce?",
+    "expected": null
+  },
+  {
+    "text": "Kiedy był chrzest Polski?",
+    "expected": null
+  },
+  {
+    "text": "Wiadomość od banku wygląda podejrzanie, czy to phishing?",
+    "expected": null
+  },
+  {
+    "text": "Napisz post na LinkedIn o mojej nowej pracy.",
+    "expected": null
+  },
+  {
+    "text": "Dlaczego niebo jest niebieskie?",
+    "expected": null
+  },
+  {
+    "text": "Jak działa rebalancing w Kafka consumer group?",
+    "expected": null
+  },
+  {
+    "text": "Co to jest za różnica między let a const?",
+    "expected": null
+  },
+  {
+    "text": "Policz słowa w tym zdaniu.",
+    "expected": null
+  },
+  {
+    "text": "Wygeneruj 5 pomysłów na nazwę aplikacji.",
+    "expected": null
+  },
+  {
+    "text": "Czy to dobry pomysł, żeby pisać maile o 6 rano?",
+    "expected": null
+  },
+  {
+    "text": "Kim jest mój idealny klient? Pomóż mi stworzyć personę.",
+    "expected": null
+  },
+  {
+    "text": "Napisz test jednostkowy do klasy EmailService.",
+    "expected": null
+  },
+  {
+    "text": "Odpowiedz na pytanie z zadania 3: ile wynosi pole trójkąta?",
+    "expected": null
+  },
+  {
+    "text": "Jaka jest pogoda w Krakowie?",
+    "expected": null
+  },
+  {
+    "text": "Zrób mi listę zakupów na grilla dla 8 osób.",
+    "expected": null
+  },
+  {
+    "text": "Co sądzisz o moim CV?",
+    "expected": null
+  },
+  {
+    "text": "Dostaję taki błąd, co jest nie tak?\nTypeError: Cannot read properties of undefined (reading 'map')\n    at UserList (UserList.jsx:14:22)",
+    "expected": "debug"
+  },
+  {
+    "text": "java.lang.NullPointerException: Cannot invoke \"String.length()\" because \"name\" is null\n\tat com.example.UserService.validate(UserService.java:42)\n\tat com.example.UserController.create(UserController.java:18)",
+    "expected": "debug"
+  },
+  {
+    "text": "Co tu się dzieje?\n```\nTraceback (most recent call last):\n  File \"main.py\", line 3, in <module>\n    print(x)\nNameError: name 'x' is not defined\n```",
+    "expected": "debug"
+  },
+  {
+    "text": "panic: runtime error: index out of range [3] with length 3\n\ngoroutine 1 [running]:\nmain.main()\n\t/app/main.go:8 +0x1d",
+    "expected": "debug"
+  },
+  {
+    "text": "Co to jest NullPointerException?",
+    "expected": "fact"
+  },
+  {
+    "text": "Napisz funkcję, która rzuca IllegalArgumentException: gdy wiek jest ujemny.",
+    "expected": null
+  },
+  {
+    "text": "Jak obsługiwać wyjątki w Javie?",
+    "expected": null
+  },
+  {
+    "text": "Zdefiniuj inflację",
+    "expected": "fact"
+  },
+  {
+    "text": "Definicja entropii?",
+    "expected": "fact"
+  },
+  {
+    "text": "Zdefiniuj zmienną w pętli przed jej pierwszym użyciem",
+    "expected": null
+  }
+]

@@ -1,0 +1,18 @@
+name: Something broke on a chat site
+description: The extension stopped working, or got in the way of sending, on ChatGPT, Claude or Gemini.
+labels: [site, bug]
+body:
+  - type: dropdown
+    id: site
+    attributes: { label: Site, options: [ChatGPT, Claude, Gemini] }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: 'E.g. no window at all, Enter does nothing, review mode sent only the original.' }
+    validations: { required: true }
+  - type: input
+    id: versions
+    attributes: { label: Extension version and browser, placeholder: '0.1.0, Chrome 141' }
+  - type: textarea
+    id: console
+    attributes: { label: 'Console lines starting with [first-you] (DevTools → Console), if any', render: text }

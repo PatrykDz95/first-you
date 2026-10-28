@@ -1,0 +1,17 @@
+name: It should have caught this
+description: A prompt in a category you practise went through without the window.
+labels: [classifier, missed]
+body:
+  - type: markdown
+    attributes:
+      value: The rules are tuned to stay quiet when unsure, so some misses are on purpose. Still, clear cases help. Issues are public — paraphrase private details.
+  - type: textarea
+    id: prompt
+    attributes: { label: Prompt (paraphrased) }
+    validations: { required: true }
+  - type: dropdown
+    id: category
+    attributes: { label: Expected category, options: [Writing messages, Mental math, Recalling facts, Understanding text, Your own opinion, Debugging, My own phrase] }
+  - type: dropdown
+    id: language
+    attributes: { label: Language, options: [English, Polish, Other] }

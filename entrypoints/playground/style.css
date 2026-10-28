@@ -1,0 +1,86 @@
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+h1 {
+  font: 600 28px/1.2 var(--serif);
+  margin: 0 0 4px;
+}
+.lead,
+.meta {
+  color: var(--graphite);
+  margin: 0 0 16px;
+}
+.thread {
+  min-height: 160px;
+  border: 1px solid var(--mist);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pg-msg-user,
+.pg-msg-ai {
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 85%;
+  white-space: pre-wrap;
+}
+.pg-msg-user {
+  align-self: flex-end;
+  background: var(--mist);
+}
+.pg-msg-ai {
+  align-self: flex-start;
+  border: 1px solid var(--mist);
+}
+.composer {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.composer textarea {
+  flex: 1;
+  min-height: 64px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--mist);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.composer button,
+.row button {
+  border: 1px solid var(--mist);
+  background: var(--surface);
+  border-radius: 9px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+#pg-send {
+  background: var(--pine);
+  color: var(--pine-ink);
+  border-color: var(--pine);
+  font-weight: 600;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+.row button {
+  font-size: 13px;
+  padding: 4px 10px;
+}
+pre {
+  background: var(--surface);
+  border: 1px solid var(--mist);
+  border-radius: 10px;
+  padding: 12px;
+  overflow-x: auto;
+  font-size: 13px;
+}

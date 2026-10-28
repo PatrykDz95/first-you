@@ -1,0 +1,68 @@
+<!doctype html>
+<!--
+  Minimized claude.ai structure, from a DOM capture on 2026-10-28 (EN UI).
+  Only the attributes the adapter relies on are kept; conversation content, sidebar and account
+  data are removed. A small script imitates Claude's send behaviour.
+-->
+<html lang="en-US">
+  <head><meta charset="utf-8" /><title>Claude (fixture)</title></head>
+  <body>
+    <main>
+      <div id="thread"></div>
+      <div class="composer">
+        <div data-cds-composer-attachments-clip=""><div data-cds-composer-attachments="" id="attachments"></div></div>
+        <div data-cds="ChatComposerEditor">
+          <div id="prompt" contenteditable="true" role="textbox" data-testid="chat-input" data-cds="Editor"
+               aria-label="Write your prompt to Claude" class="tiptap ProseMirror"><p><br /></p></div>
+        </div>
+        <div data-cds="ChatComposerActions">
+          <button type="button" data-testid="chat-input-attach" aria-label="Add files, connectors, and more">+</button>
+          <div data-cds-part="send-slot"><button id="send" type="button" data-testid="chat-input-send" aria-label="Send message">send</button></div>
+          <div data-cds-part="idle-slot" inert=""><button type="button" aria-label="Use voice mode">voice</button></div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const prompt = document.getElementById('prompt');
+      const thread = document.getElementById('thread');
+      let n = 0;
+      window.__editSaved = false;
+
+      function send() {
+        const text = prompt.innerText.trim();
+        if (!text) return;
+        n++;
+        const human = document.createElement('div');
+        human.setAttribute('data-testid', 'transcript-row');
+        human.setAttribute('data-perf-row', 'human');
+        human.innerHTML =
+          '<div data-cds="UserMessage" data-testid="user-message"><div class="text"></div>' +
+          // Inline edit field inside the transcript row (must never be intercepted)
+          '<textarea class="edit-input" aria-label="Edit message">edit</textarea></div>';
+        human.querySelector('.text').textContent = text;
+        const ai = document.createElement('div');
+        ai.setAttribute('data-testid', 'transcript-row');
+        ai.setAttribute('data-perf-row', 'assistant');
+        ai.innerHTML = '<div data-cds="AssistantMessage" data-testid="assistant-message"><p>answer</p></div>';
+        thread.append(human, ai);
+        prompt.innerHTML = '<p><br></p>';
+      }
+
+      // Like TipTap: Enter sends, Shift+Enter inserts a newline.
+      prompt.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          send();
+        }
+      });
+      document.getElementById('send').addEventListener('click', send);
+      // Edit field: Enter saves the edit.
+      document.addEventListener('keydown', (e) => {
+        if (e.target.closest && e.target.closest('.edit-input') && e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          window.__editSaved = true;
+        }
+      });
+    </script>
+  </body>
+</html>
